@@ -14,14 +14,18 @@
     <h2>My Favorite Song</h2>
 
     <audio id="audio">
-        <source src="songs/song1.mp3" type="audio/mpeg">
-        Your browser does not support audio.
-    </audio>
+    <source src="songs/song1.mp3" type="audio/mpeg">
+</audio>
 
-    <div class="buttons">
-        <button onclick="playSong()">▶ Play</button>
-        <button onclick="pauseSong()">⏸ Pause</button>
-    </div>
+<input type="range" id="progress" value="0" min="0" max="100">
+
+<div class="buttons">
+    <button onclick="prevSong()">⏮</button>
+
+    <button id="playBtn" onclick="togglePlay()">▶ Play</button>
+
+    <button onclick="nextSong()">⏭</button>
+</div>
 </div>
 
 <script src="script.js"></script>
